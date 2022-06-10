@@ -19,6 +19,7 @@ public class TestBase {
 
         Configuration.baseUrl = System.getProperty("base_url");
         Configuration.browserSize = System.getProperty("browser_size");
+        Configuration.browser = System.getProperty("browser");
         Configuration.remote = "https://user1:1234@"+System.getProperty("server_selenoid");
 
 
