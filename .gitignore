@@ -11,7 +11,11 @@
 .mtj.tmp/
 
 # Properties files
+<<<<<<< HEAD
 *.properties
+=======
+*.jenkins.properties
+>>>>>>> 9123b31 (Initial commit)
 
 # Package Files #
 *.jar

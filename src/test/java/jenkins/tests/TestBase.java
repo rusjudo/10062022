@@ -16,9 +16,15 @@ public class TestBase {
     static void setUp() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
+<<<<<<< HEAD
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.browserSize = "1920x1080";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+=======
+        Configuration.baseUrl = System.getProperty("base_url");
+        Configuration.browserSize = System.getProperty("browser_size");
+        Configuration.remote = "https://user1:1234@"+System.getProperty("server_selenoid");
+>>>>>>> 9123b31 (Initial commit)
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
