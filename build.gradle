@@ -11,7 +11,9 @@ def     allureVersion = "2.17.3",
         selenideVersion = "6.4.0",
         junitVersion = "5.8.2",
         slf4jVersion = '1.7.36',
-        javaFakerVersion = "1.0.2"
+        javaFakerVersion = "1.0.2",
+        ownerVersion = "1.0.12"
+
 
 allure {
     report {
@@ -34,6 +36,7 @@ dependencies {
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "com.github.javafaker:javafaker:$javaFakerVersion",
+            "org.aeonbits.owner:owner:$ownerVersion"
     )
 }
 
